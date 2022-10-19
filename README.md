@@ -10,4 +10,8 @@ Write your Jira-task as specific as you can, bcs you won't have to code them any
 JiPT will do the heavy lifting for you. 
 
 
+## Get started
+
+- install [ForgeCLI](https://developer.atlassian.com/platform/forge/getting-started/#install-the-forge-cli)
+
 ![DevPostBanner](res/banner.png)
