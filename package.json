@@ -1,0 +1,11 @@
+{
+  "name": "JiraHacq",
+  "version": "11",
+  "main": "index.js",
+  "repository": "https://github.com/3lLobo/JiraHacq",
+  "author": "3lLobo <flocwolf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@forge/cli": "^5.2.1"
+  }
+}
