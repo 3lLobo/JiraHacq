@@ -15,3 +15,8 @@ JiPT will do the heavy lifting for you.
 - install [ForgeCLI](https://developer.atlassian.com/platform/forge/getting-started/#install-the-forge-cli)
 
 ![DevPostBanner](res/banner.png)
+
+Load the env into bash:
+```sh
+export $(grep -v '^#' .env | xargs -d '\n')
+```

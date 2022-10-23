@@ -1,0 +1,13 @@
+modules:
+  jira:issueAction:
+    - key: jirahacq-hello-world
+      function: main
+      title: jirahacq
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/1e5d6975-9a7b-4663-a7bb-328699fd7eb0
+permissions:
+  scopes:
+    - read:jira-work
