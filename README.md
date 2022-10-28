@@ -20,3 +20,18 @@ Load the env into bash:
 ```sh
 export $(grep -v '^#' .env | xargs -d '\n')
 ```
+
+
+## OpenAI
+
+We got accex to the new codex-davinci002 model :)
+
+[Best practice](https://beta.openai.com/docs/guides/code/editing-code)
+
+## TODO
+
+- Read the issue body.
+- Prompt to choose language.
+- Codex api call.
+- Display the text.
+- Publish on marketplace
