@@ -11,3 +11,7 @@ app:
 permissions:
   scopes:
     - read:jira-work
+  external:
+    fetch:
+      backend:
+        - "https://api.cognitive.microsofttranslator.com" # TODO: change to code api

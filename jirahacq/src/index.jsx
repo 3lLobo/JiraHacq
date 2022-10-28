@@ -4,12 +4,6 @@ import ForgeUI, { render, Fragment, Text, IssuePanel, IssueAction, ModalDialog, 
 const App = () => {
   const context = useProductContext();
   const comments = useState(async () => await fetchCommentsForIssue(context.platformContext.issueKey));
-  const comBody = comments.map(async (c) => (await c.body))
-  console.log("🚀 ~ file: index.jsx ~ line 8 ~ App ~ comBody", comBody)
-  // console.info("🚀 ~ file: index.jsx ~ line 8 ~ App ~ comments", comments.map((com) => com.id));
-  console.log("🚀 ~ file: index.jsx ~ line 8 ~ App ~ comments", comments.length);
-  console.log("🚀 ~ file: index.jsx ~ line 8 ~ App ~ comments", comments);
-
   const [isOpen, setOpen] = useState(true);
 
   if (!isOpen) {
