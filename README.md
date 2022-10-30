@@ -21,6 +21,15 @@ Load the env into bash:
 export $(grep -v '^#' .env | xargs -d '\n')
 ```
 
+Develope with docker and tunnel
+```sh
+npx forge tunnel
+```
+
+Set the secret API key:
+```sh
+npx forge variables set --encrypt OPENAI_API_KEY xxxxxxxxxx
+```
 
 ## OpenAI
 

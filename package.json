@@ -1,11 +1,21 @@
 {
   "name": "JiraHacq",
   "version": "11",
+  "type": "module",
   "main": "index.js",
   "repository": "https://github.com/3lLobo/JiraHacq",
   "author": "3lLobo <flocwolf@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@forge/api": "^2.8.0",
     "@forge/cli": "^5.2.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "forge build",
+    "publish": "forge publish",
+    "lint": "forge lint",
+    "env": "export $(grep -v '^#' .env | xargs -d '\n')",
+    "tunnel": "FORGE_VAR_OPENAI_API_KEY=$OPENAI_API_KEY forge tunnel"
   }
 }

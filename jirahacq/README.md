@@ -17,9 +17,10 @@ See [Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/)
 forge deploy
 ```
 
-- Install your app in an Atlassian site by running:
+- Install your app in an Atlassian site. Changes in the manifest file can be synced with the upgrade flag:
 ```
 forge install
+forge install --upgrade
 ```
 
 - Develop your app by running `forge tunnel` to proxy invocations locally:
