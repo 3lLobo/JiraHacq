@@ -2,6 +2,11 @@
 
 ![altcodegeist](res/codegeist.png)
 
+The most powerful AI model at your service. Let OpenAI's GPT3 model generate code for you.
+Simply choose the desired programming language and save the generated code.
+
+This Jira app takes your issue title and description as input and generates a complete script for you.
+
 
 # codegeist 2022 
 
@@ -11,6 +16,20 @@ JiPT will do the heavy lifting for you.
 
 
 ## Get started
+
+No more need to install forge globally.
+Just set the `.env` file and `cd` into the app directory. I customized the package scripts to work call the forge commands. In short:
+```bash
+yarn
+cd JiPT3-CodeGen/
+yarn
+yarn build
+yarn install
+yarn tunnel
+yarn forge <any_forge_cmd_you_want>
+```
+
+Or follow the not so elegant `npx` route.
 
 - install [ForgeCLI](https://developer.atlassian.com/platform/forge/getting-started/#install-the-forge-cli)
 
@@ -33,14 +52,6 @@ npx forge variables set --encrypt OPENAI_API_KEY xxxxxxxxxx
 
 ## OpenAI
 
-We got accex to the new codex-davinci002 model :)
+We got accexx to the new codex-davinci002 model :)
 
 [Best practice](https://beta.openai.com/docs/guides/code/editing-code)
-
-## TODO
-
-- Read the issue body.
-- Prompt to choose language.
-- Codex api call.
-- Display the text.
-- Publish on marketplace
