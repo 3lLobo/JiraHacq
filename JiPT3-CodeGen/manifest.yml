@@ -1,0 +1,20 @@
+modules:
+  jira:issuePanel:
+    - key: jipt3
+      function: main
+      title: JiPT3-CodeGen
+      icon: "/res/codeGenHacq.svg"
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/a0fbc07f-08e3-49f9-a6b2-737ffd24d8fb
+permissions:
+  scopes:
+    - write:jira-work
+    - write:issue:jira
+    - read:jira-work
+  external:
+    fetch:
+      backend:
+        - https://api.openai.com

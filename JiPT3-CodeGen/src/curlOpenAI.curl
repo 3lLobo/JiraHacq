@@ -1,0 +1,12 @@
+curl https://api.openai.com/v1/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer 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" \
+  -d '{
+  "model": "code-davinci-002",
+  "prompt": "\"\"\"\n1. Create a list of first names\n2. Create a list of last names\n3. Combine them randomly into a list of 100 full names\n\"\"\"",
+  "temperature": 0,
+  "max_tokens": 300,
+  "top_p": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0
+}'

@@ -1,0 +1,29 @@
+{
+  "name": "jipt3",
+  "version": "1.0.7",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "forge": "export $(grep -v '^#' ../.env | xargs -d '\n') && forge",
+    "hook-errors": "echo '\\x1b[31mThe build failed because a Forge UI hook is being used incorrectly. Forge UI hooks follow the same rules as React Hooks but have their own API definitions. See the Forge documentation for details on how to use Forge UI hooks.\n' && exit 1",
+    "build": "forge install",
+    "deploy": "forge deploy",
+    "publish": "forge publish",
+    "lint": "forge lint",
+    "env": "export $(grep -v '^#' ../.env | xargs -d '\n') && env | grep FORGE",
+    "tunnel": "export $(grep -v '^#' ../.env | xargs -d '\n') && FORGE_USER_VAR_OPENAI_API_KEY=$OPENAI_API_KEY forge tunnel"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-react-hooks": "^2.1.2"
+  },
+  "dependencies": {
+    "@forge/api": "^2.7.0",
+    "@forge/cli": "^6.0.0",
+    "@forge/ui": "^1.4.0",
+    "@igor.dvlpr/comment-it": "^2.2.0",
+    "form-data": "^4.0.0",
+    "qs": "^6.11.0"
+  }
+}
