@@ -5,6 +5,7 @@
  * @param response a response object returned from `api.fetch()`, `requestJira()`, or similar
  */
 export async function checkResponse(apiName, response) {
+  console.log("🚀 ~ file: checkResponse.js ~ line 8 ~ checkResponse ~ response", response)
   if (!response.ok) {
     const message = `Error from ${apiName}: ${response.status} ${await response.text()}`;
     console.error(message);
