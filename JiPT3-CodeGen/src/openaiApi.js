@@ -32,7 +32,8 @@ export async function getCodexCode(prompt) {
   });
 
   const codexJson = await codexResponse.json();
-  // console.log("🚀codexJson", codexJson)
+  console.log("🚀codexJson", codexJson)
+  // await checkResponse("Codex", codexJson)
   const { text, finish_reason } = codexJson.choices[0];
   const resText = ''.concat([prompt, '\n', text]);
   console.log("resText", finish_reason, '\n', resText)
