@@ -8,6 +8,8 @@ Simply choose the desired programming language and save the generated code.
 
 [SourceCode](https://github.com/3lLobo/JiraHacq)
 
+[Demo Video](https://youtu.be/jaU0wSHGOLU)
+
 ## Installation
 
 You will need an api key from OpenAI.
